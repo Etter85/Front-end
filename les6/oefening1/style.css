@@ -56,8 +56,8 @@ nav a {
 		font-size: 1.1em;
 	}
 	
-	nav a, nav li{
-		display: inline;
+	nav li{
+		display: inline-block;
 		font-size: 1.3em;
 	}
 	
@@ -81,8 +81,3 @@ nav a {
 		width: 24%;
 	}
 }
-
-/* 
-   De navigatie moet bovenaan de pagina ónder de H1 komen te staan
-   Alle positionering moet met ems gebeuren.
- */
