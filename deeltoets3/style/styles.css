@@ -1,0 +1,108 @@
+/* !small reset */
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+/* !type styles */
+* {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+header h1 {
+	text-align: center;
+}
+
+header a {
+	text-align: center;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+	color: #b2735d;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+a:hover {
+	color: #f76532;
+	text-decoration: underline;
+	text-shadow: 0px 0px 2px #ffe8e0;
+}
+
+/* !color classes */
+.help-color {
+	color: #666;
+}
+
+.main-color {
+	color: #f76532;
+}
+
+/* !abstractions */
+
+/* !layout classes */
+
+/* header */
+header {
+	border-bottom: 10px solid #f76532;
+}
+
+.title {
+	position: relative;
+	font-size: 1.5em;
+}
+
+/* navigation */
+nav ul {
+	list-style: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	font-size: 1em;
+}
+
+.main-nav li {
+	margin: 3px;
+	text-align: center;
+	padding: 3px;
+	border: 1px solid #666;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.sub-nav {
+	display: none;
+}
+
+/* main */
+aside {
+	clear: both;
+}
+
+section h1, section p {
+	margin: 0;
+	padding: 0;
+}
+
+section p {
+	margin: 4px 0 6px 0;
+}
+
+aside section {
+	margin: 5px 0 10px 0;
+	border-bottom: 1px solid #f76532;
+}
+
+h1+h1 {
+	font-size: 1em;
+	font-weight: normal;
+	font-style: italic;
+}
