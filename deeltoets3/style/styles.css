@@ -13,9 +13,13 @@ header h1 {
 	text-align: center;
 }
 
-header a {
+header a, header li {
 	text-align: center;
 	display: block;
+}
+
+header img {
+	max-width: 100%;
 }
 
 a {
@@ -45,6 +49,9 @@ a:hover {
 /* !abstractions */
 
 /* !layout classes */
+img, video {
+	max-width: 100%;
+}
 
 /* header */
 header {
@@ -56,7 +63,7 @@ header {
 	font-size: 1.5em;
 }
 
-/* navigation */
+/* nav */
 nav ul {
 	list-style: none;
 	clear: both;
@@ -82,7 +89,7 @@ nav li {
 	display: none;
 }
 
-/* main */
+/* aside */
 aside {
 	clear: both;
 }
@@ -105,4 +112,133 @@ h1+h1 {
 	font-size: 1em;
 	font-weight: normal;
 	font-style: italic;
+}
+
+/* main */
+h2 {
+	font-size: 1.2em;
+}
+
+article h1, article h2 {
+	margin-left: 1rem;
+	border-left: 1px solid #f76532;
+	padding-left: 0.5rem;
+}
+
+article {
+	padding: .5em;
+}
+
+/* footer */
+footer h1 {
+	font-size: 1.2em;
+	margin: 0 0 0.3em 0;
+}
+
+.sitemap {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sitemap>li {
+	margin: 0.3em 0 0 0;
+	font-weight: bold;
+}
+
+.sitemap ul {
+	list-style: none;
+}
+
+/* !media queries */
+@media (min-width: 768px) {
+	header a, header li {
+		text-align: left;
+		display: inline;
+	}
+	
+	header {
+		padding-bottom: 0.6em;
+		border-bottom: none;
+	}
+	
+	nav ul {
+		padding: 0.5em;
+	}
+	
+	nav ul:first-child {
+		background-color: #f76532;
+		color: white;
+	}
+	
+	nav ul:first-child a, nav ul:first-child li, nav ul:first-child a:hover {
+		color: white;
+	}
+	
+	nav ul+ul {
+		font-size: 0.9em;
+	}
+	
+	nav li {
+		padding-right: 0.5em;
+		border-right: 1px solid gray;
+	}
+	
+	body>article {
+		width: 60%;
+		float: left;
+	}
+	
+	aside {
+		float: right;
+		margin-right: 1em;
+		width: 30%;
+		clear: none;
+		background-color: #dedede;
+		padding: .5em;
+	}
+	
+	h1 a {
+		color: black;
+	}
+	
+	aside>h1 {
+		margin-left: 1rem;
+		border-left: 1px solid #f76532;
+		padding-left: 0.5rem;
+		margin-top: 0.1em;
+		margin-bottom: 0.1em;
+	}
+	
+	aside section {
+		background-color: #eee;
+	}
+	
+	footer {
+		width: 98%;
+		clear: both;
+		color: #ccc;
+		background-color: black;
+		padding: 1%;
+	}
+	
+	footer h1 {
+		color: white;
+	}
+	
+	.sitemap>li {
+		color: white;
+	}	
+}
+
+@media (max-width: 500px) {
+	.touch a {
+		padding: .5em;
+		display: inline-block;
+		margin: .3em 0;
+		background-color: #ededed;
+		border-radius: .2em;
+		border: 1px solid #999;
+		color: #f76532
+	}
 }
